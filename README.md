@@ -59,10 +59,6 @@ This game helps users understand the **order of operations (BODMAS)** by allowin
 
 ---
 
-## 📸 Screenshots
-
-(Add screenshots here if needed)
-
 ---
 
 ## 📁 Project Structure
