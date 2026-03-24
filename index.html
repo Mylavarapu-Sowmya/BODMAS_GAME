@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BODMAS Bus Jam</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="game-container">
+  <h1>🧠 BODMAS Bus Jam</h1>
+
+  <div class="hud">
+    <span>⭐ Score: <span id="score">0</span></span>
+    <span>🎯 Level: <span id="level">1</span></span>
+  </div>
+
+  <div id="expression" class="expression"></div>
+
+  <p id="feedback"></p>
+
+  <button onclick="nextStep()">Next Step ➡</button>
+</div>
+
+<audio id="correctSound" src="sound/correct.mp3"></audio>
+<audio id="wrongSound" src="sound/wrong.mp3"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>

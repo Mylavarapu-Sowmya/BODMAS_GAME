@@ -1,0 +1,132 @@
+/* 🌌 Background + Global */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  color: #fff;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* ✨ Container (Glass effect) */
+.game-container {
+  max-width: 650px;
+  margin: 40px auto;
+  padding: 25px;
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* 🧠 Title */
+h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  text-shadow: 0 0 15px #00f7ff;
+}
+
+/* 📊 HUD */
+.hud {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+/* 🎯 Expression Area */
+.expression {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 40px 0;
+}
+
+/* 🧩 Blocks */
+.block {
+  padding: 18px 22px;
+  font-size: 24px;
+  border-radius: 15px;
+  cursor: pointer;
+  background: linear-gradient(145deg, #ff9f43, #ff6b6b);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+}
+
+/* 🔢 Operators */
+.operator {
+  background: linear-gradient(145deg, #54a0ff, #5f27cd);
+}
+
+/* ✨ Hover effect */
+.block:hover {
+  transform: scale(1.15) rotate(2deg);
+  box-shadow: 0 0 20px #00f7ff;
+}
+
+/* ✅ Correct */
+.correct {
+  background: linear-gradient(145deg, #1dd1a1, #10ac84) !important;
+  transform: scale(1.3);
+  box-shadow: 0 0 25px #00ffcc;
+}
+
+/* ❌ Wrong */
+.wrong {
+  background: linear-gradient(145deg, #ff4757, #c0392b) !important;
+  animation: shake 0.3s;
+}
+
+/* 🎬 Animations */
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-6px); }
+  50% { transform: translateX(6px); }
+  75% { transform: translateX(-6px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+/* 💬 Feedback */
+#feedback {
+  font-size: 20px;
+  margin-top: 10px;
+  min-height: 30px;
+  text-shadow: 0 0 10px #00f7ff;
+}
+
+/* 🚀 Button */
+button {
+  padding: 12px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(145deg, #00f7ff, #00c3ff);
+  color: black;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #00f7ff;
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 600px) {
+  .block {
+    font-size: 20px;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+}
